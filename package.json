@@ -8,7 +8,9 @@
     "start:dist": "node dist/index.js",
     "develop": "ts-node-dev src/index.ts",
     "build": "tsc",
-    "distribute": "yarn build && yarn run-dist"
+    "distribute": "yarn build && yarn run-dist",
+    "lint": "eslint --ext .ts ./src/",
+    "lint:fix": "eslint --fix --ext .ts ./src/"
   },
   "dependencies": {
     "@satont/grammy-mongodb-storage": "^1.0.1",
@@ -19,6 +21,12 @@
   },
   "devDependencies": {
     "@types/node": "16",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.5.5"

@@ -1,16 +1,16 @@
-import 'dotenv/config'
+import 'dotenv/config';
 
-import './utils/checkDotenv'
+import './utils/checkDotenv';
 
-import {getBot} from './bot'
-import {connectMongoose} from './core/db'
+import { getBot } from './bot';
+import { connectMongoose } from './core/db';
 
 void (async () => {
-  await connectMongoose()
+  await connectMongoose();
 
-  const bot = getBot()
+  const bot = getBot();
 
-  const me = await bot.api.getMe()
-  console.log(`@${me.username} is starting`)
-  await bot.start()
-})()
+  const me = await bot.api.getMe();
+  console.log(`@${me.username} is starting`);
+  await bot.start();
+})();

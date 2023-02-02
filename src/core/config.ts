@@ -11,4 +11,4 @@ export const config = {
     url: mongoUrl,
     dbName: mongoDbName,
   },
-}
+};
