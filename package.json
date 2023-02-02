@@ -4,9 +4,9 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node index.ts",
+    "start": "ts-node src/index.ts",
     "start:dist": "node dist/index.js",
-    "develop": "ts-node-dev index.ts",
+    "develop": "ts-node-dev src/index.ts",
     "build": "tsc",
     "distribute": "yarn build && yarn run-dist"
   },
