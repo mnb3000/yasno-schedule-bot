@@ -8,6 +8,6 @@ RUN yarn install --frozen-lockfile && yarn cache clean
 
 COPY . .
 
-RUN yarn build-ts
+RUN yarn build
 
 CMD [ "yarn", "run-dist" ]

@@ -1,6 +1,6 @@
 import {Composer} from 'grammy'
 
-import {User, Users} from '../models/users.js'
+import {User, Users} from '../models/users'
 import {CustomContext} from '../types/context'
 
 const composer = new Composer<CustomContext>()
